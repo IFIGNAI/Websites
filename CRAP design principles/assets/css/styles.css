@@ -1,0 +1,797 @@
+body, main {
+    font-family: Jost;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 7px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.button {
+    font-family: Jost;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #E5D9ED;
+    padding: 10px 7px;
+
+}
+
+.button a{
+    color: black;
+}
+
+.button a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#dark_mode{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#round_box {
+    border-radius: 15px;
+}
+
+li {
+    text-decoration: none;
+}
+
+/* -------------- HEADER -------------- */
+
+.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 0px 30px;
+    
+}
+
+#headerLogo {
+    width: 20%;
+}
+
+nav{
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+#source{
+    grid-column: 4/5;
+    width: 9rem;
+    height: 3rem;
+
+    position: relative;
+    left: 55%;
+    top: 3rem;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 20px;
+    color: black;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    transform-origin: center;
+}
+
+nav a:hover {
+    transform: scale(1.5);
+}
+
+.button #source{
+    display: flex;
+    justify-content: right;
+}
+
+hr{
+    border: 1px solid lightgray;
+}
+
+.citeButton{
+    /* new css to try to fix the citations page button, idk what the*/
+    /* previous code for this means so instead of touching it i'm just*/
+    /* making my own thing*/
+    justify-content: center;
+    grid-column: 4/5;
+    margin-top: 2.6vw;
+}
+
+.citeButton a{
+    color: #000000;
+    background-color: #E5D9ED;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+}
+
+.citeButton a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* -------------- FOOTER CSS -------------- */
+footer {
+    background-color: #96C8E6;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0px;
+}
+
+#footerLogo{
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+#footerPrinciples{
+    grid-column: 2/3;
+}
+
+#footerExtras{
+    grid-column: 3/4;
+}
+
+#footerWhy{
+    grid-column: 4/5;
+}
+
+#copyright{
+    grid-column: 1/5;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+footer a{
+    color: #264ACC;
+}
+
+/* -------------- INDEX CSS -------------- */
+
+#intro {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;*/
+    width: 40vw;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+#intro h2{
+    font-size: 2.7em;
+    margin: 1vw;
+}
+
+#intro p{
+    width: 54%;
+    margin: 1vw auto;
+    font-size: 1.2em;
+}
+
+#intro .button{
+    margin: 1vw;
+}
+
+.heroimg{
+    display: flex;
+    align-content: center;
+    padding: 9vw 2vw 15vw;
+}
+
+.mission{
+    padding-left: 4vw;
+    padding-bottom: 2vw;
+}
+
+.mission h2{
+    font-size: 5em;
+    margin: 3vw 0vw;
+}
+
+#round_box{
+    /* font-family: Jost;
+    color: black;
+    font-size: 2em;
+    width: 45%;
+    border: 2px solid black;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0%;
+    border-top-right-radius: 15%;
+    padding: 3vw 3vw 3vw 0vw; */
+
+    font-family: 'Jost', sans-serif;
+    color: black;
+    font-size: 3vw;
+    width: 80%; 
+    max-width: 600px; 
+    border-top: 2px solid black; 
+    border-right: 2px solid black; 
+    border-top-right-radius: 25%; 
+    padding: 5vw 4vw 0 2vw; 
+    box-sizing: border-box;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 90vh; 
+    overflow: auto;
+}
+
+#round_box p {
+    max-width: 80%; 
+    margin: 0; 
+}
+
+/* --------- PAGE STYLES ---------- */
+
+/* --------- EXPLANATION ---------- */
+
+#explain_sect {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 2rem;
+    padding: 20px;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.grid-item-left {
+    /* Left side content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.grid-item-left img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+}
+
+.grid-item-left h2 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.grid-item-right {
+    width: 70%;
+    margin: auto;
+}
+
+.grid-item-right p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.outline {
+    font-family: 'Jost', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    border-top: 2px solid black; 
+    border-right: 2px solid black; 
+    border-top-right-radius: 25%; 
+    padding: 3vw 4vw 0 2vw; 
+    box-sizing: border-box;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 30vh; 
+    max-width: 20vw;
+    overflow: auto;
+}
+
+.outline p {
+    font-size: 1.3rem; 
+    margin: 0;
+}
+
+.outline h2 {
+    font-size: 3rem; 
+    margin-bottom: 0.5em; 
+}
+
+.grid-item-right p {
+    font-size: 1.1rem; 
+    margin: 10px 0;
+}
+
+
+
+
+/* --------- EXAMPLES ---------- */
+
+#Example_header {
+    font-size: 5rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-gap: 8px 50px; 
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ex-grid-item img {
+    border-top: 10px #000000;
+    width: 100%; 
+    height: auto; 
+}
+
+.ex-grid-item {
+    border-top: 10px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------- TIPS ---------- */
+
+.tips_sect {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.tips_sect h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tips_block {
+    margin: 10px 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tips_open {
+    background-color: #f8f8f8;
+    cursor: pointer;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.tips_open p {
+    margin: 0;
+    color: #000000;
+}
+
+.tips_open .plus-icon {
+    font-size: 1.5em;
+    color: #000000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tips_hidden {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+input[type="checkbox"]:checked ~ .tips_hidden {
+    max-height: 200px;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .tips_open .plus-icon {
+    transform: rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.tips_open {
+    cursor: pointer;
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* --------- BACK TO TOP ---------- */
+
+#back_to_top {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* --------- CITATIONS ---------- */
+#citations_sect h1{
+    font-size: 4.5rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.cites{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.cites h2{
+    font-size: 2rem;
+}
+
+.cites a{
+    display: inline-block;
+    margin: .2rem auto;
+}
+
+#citations_sect hr {
+    width: 75%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px){
+    /*.citeButton{
+        margin-top: 30px;
+    }*/
+
+    #intro p {
+        font-size: 16px;
+        width: 75%;
+    }
+
+    #intro h2 {
+        font-size: 30px;
+    }
+
+    .ex-grid-item img {
+        border-top: 10px #000000;
+        max-width: 95%;
+        }
+
+    #grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .heroimg {
+        padding: 5vw 2vw; 
+    }
+
+    .mission h2 {
+        font-size: 4rem; 
+    }
+
+    nav a {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+
+    .grid-item-left h2 {
+        font-size: 22px;
+    }
+    
+    .grid-item-left p {
+        font-size: 18px;
+    }
+
+    .grid-item-right p {
+        font-size: 16px;
+    }
+
+    .outline {
+        width: 100%;
+        max-width: 200px;
+        border-top-right-radius: 23%;
+        padding: 1vw 1vw 0 1vw; 
+        max-height: 20vh;
+    }
+}
+
+@media (max-width: 900px){
+    #intro p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    #intro h2 {
+        font-size: 28px;
+    }
+
+    #grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #headerLogo {
+        width: 40%;
+        }
+        
+    .citeButton{
+        margin-top: 5vw;
+    }
+
+    #source {
+        width: 8rem;  
+        height: 2rem;  
+        left: 20%;
+        top: 1rem;
+        margin-right: 20px;
+    }
+
+    #source a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    nav a {
+        font-size: 1.6em;
+        padding: 12px;
+    }
+
+    .mission h2 {
+        font-size: 3.5rem;
+    }
+
+    .ex-grid-item img {
+        border-top: 10px #000000;
+        max-width: 90%;
+        }
+}
+
+@media (max-width: 800px) {
+    #grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .citeButton{
+        margin-top: 6vw;
+    }
+    .citeButton a{
+        font-size: 14px;
+    }
+
+    #source {
+        width: 7rem;
+        height: 2rem;
+        left: 10%;
+        top: 1rem;
+    }
+
+    #source a {
+        font-size: 14px; 
+        padding: 6px;
+    }
+
+    #headerLogo {
+        width: 50%;
+    }
+
+    nav a {
+        font-size: 1.5em; 
+        padding: 10px;
+    }
+
+    .mission h2 {
+        font-size: 2.5rem; 
+    }
+
+    .heroimg {
+        padding-top: 5vw; 
+    }
+
+    #Example_header {
+        font-size: 3rem;
+        padding: 20px;
+    }
+    
+    .ex-grid-item img {
+    border-top: 10px #000000;
+    max-width: 85%;
+    }
+
+    .tips_sect {
+            margin: 50px;
+            max-width: 750px;
+            text-align: center;
+        }
+
+        .tips_sect h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .tips_block {
+            margin: 10px 0;
+        }
+
+    .grid-item-left h2 {
+        font-size: 20px;
+    }
+    
+    .grid-item-left p {
+        font-size: 16px;
+    }
+
+    .grid-item-right p {
+        font-size: 14px;
+    }
+
+    .outline {
+        width: 100%; 
+        max-width: 200px;
+        border-top-right-radius: 23%; 
+        padding: 1vw 1vw 0 1vw; 
+        max-height: 20vh; 
+    }
+}
+
+@media (max-width: 600px){
+    #intro p {
+        font-size: 12px; 
+        width: 100%;  
+    }
+
+    #intro h2 {
+        font-size: 24px;  
+    }
+
+    #grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .citeButton{
+        margin-top: 7vw;
+    }
+
+    .citeButton a{
+        font-size: 13px;
+    }
+
+    #source {
+        width: 6rem; 
+        height: 2rem;
+        left: 5%;
+        top: 1.5rem;
+    }
+
+    #source a {
+        font-size: 12px;  
+        padding: 3px 3px;
+    }
+
+    #headerLogo {
+        width: 60%;
+        }
+
+    nav a {
+        font-size: 1.4em;  
+        padding: 8px;
+    }
+
+    .mission h2 {
+        font-size: 2rem; 
+    }
+
+    #explain_sect {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 25px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    #explain_sect .grid-item-right p {
+        font-size: 16px;
+    }
+
+    #Example_header {
+        font-size: 2.5rem;
+            padding: 10px;
+        }
+        
+        .ex-grid-item img {
+        border-top: 5px #000000;
+        width: 80%;
+        }
+    
+        .tips_sect {
+                margin: 30px;
+                max-width: 600px;
+                text-align: center;
+            }
+    
+            .tips_sect h1 {
+                font-size: 1.75em;
+                margin-bottom: 5px;
+            }
+    
+            .tips_block {
+                margin: 8px 0;
+            }
+
+    #footerLogo,
+    #footerPrinciples,
+    #footerExtras,
+    #footerWhy {
+        font-size: 0.9rem;  
+    }
+
+    #copyright {
+        font-size: 10px;  
+    }
+
+    footer a {
+        font-size: 14px;  
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    main {
+        flex: 1;
+    }
+    footer {
+        margin-top: auto;
+    }
+}
+
+
+
+
