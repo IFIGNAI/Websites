@@ -1,0 +1,191 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header{
+    display: block;
+    margin-bottom: 20px;
+    color:#000;
+    
+}
+
+#navi{
+    width: 100%;
+    backdrop-filter: blur(2px);
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 120%;
+    align-items: center;
+    margin-top: 0;
+    padding:0px 0px 10px;
+    background-color: #000;
+}
+
+#navi a{
+    font-size: 120%;
+    padding-inline: 8%;
+    padding-top: 1%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+#navi a:hover{
+    color: #777777;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background: url('../images/universities.jpeg') lightgray 3.438px -205.412px / 100% 340.458% no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.banner h1, h2{
+    display: block;
+    margin-bottom: 20px;
+}
+.banner h1 {
+    font-size: 8rem;
+    letter-spacing: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.navigation li {
+    position: relative;
+    width: 40%;
+    transition: border 0.5s;
+}
+
+
+a{
+    transition: text-shadow 0.5s;
+}
+
+.navigation li a:hover{
+    text-shadow: 3px 3px 0px rgb(0, 0, 0);
+}
+
+.navigation li img{
+    transition: box-shadow 0.5s;
+}
+
+.navigation li:hover img {
+    box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+.navigation img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 3px solid #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    #navi a{
+        font-size: 100%;
+        padding-inline: 4%;
+        padding-top: 1%;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.3s;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navi a{
+        font-size: 100;
+        padding-inline: 3%;
+        padding-top: 1%;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.3s;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+}
+
+
